@@ -1,0 +1,42 @@
+{
+    "name": "phonegap-plugin-csdk-user-auth",
+    "description": "This repo is a template for starting a new plugin.",
+    "version": "0.0.1",
+    "homepage": "http://github.com/CreativeSDK/phonegap-plugin-csdk-user-auth#readme",
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/CreativeSDK/phonegap-plugin-csdk-user-auth.git"
+    },
+    "bugs": {
+        "url": "https://github.com/CreativeSDK/phonegap-plugin-csdk-user-auth/issues"
+    },
+    "cordova": {
+        "id": "phonegap-plugin-csdk-user-auth",
+        "platforms": [
+            "ios",
+            "android",
+            "browser"
+        ]
+    },
+    "keywords": [
+        "ecosystem:cordova",
+        "ecosystem:phonegap",
+        "cordova-ios",
+        "cordova-android",
+        "cordova-browser"
+    ],
+    "engines": [
+        {
+            "name": "cordova",
+            "version": ">=3.0.0"
+        }
+    ],
+    "author": "Adobe PhoneGap Team",
+    "license": "APL",
+    "scripts": {
+        "test": "jasmine-node --color spec"
+    },
+    "devDependencies": {
+        "jasmine-node": "1.14.5"
+    }
+}
