@@ -38,7 +38,12 @@
             </feature>
         </config-file>
 
+        <config-file target="AndroidManifest.xml" parent="/manifest/application">
+            <activity android:name="com.adobe.phonegap.csdk.AdobeLoginActivity" android:exported="true"/>
+        </config-file>
+
         <source-file src="src/android/UserAuth.java" target-dir="src/com/adobe/phonegap/csdk" />
+        <source-file src="src/android/AdobeLoginActivity.java" target-dir="src/com/adobe/phonegap/csdk" />
     </platform>
 
     <!-- ios -->
