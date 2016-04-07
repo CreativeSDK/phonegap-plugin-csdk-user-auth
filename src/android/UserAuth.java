@@ -109,7 +109,7 @@ public class UserAuth extends CordovaPlugin {
            obj = new JSONObject();
            obj.put("adobeID", profile.getAdobeID());
            obj.put("description", profile.getDescription());
-           obj.put("fullName", profile.getDisplayName());
+           obj.put("displayName", profile.getDisplayName());
            obj.put("email", profile.getEmail());
            obj.put("firstName", profile.getFirstName());
            obj.put("lastName", profile.getLastName());
