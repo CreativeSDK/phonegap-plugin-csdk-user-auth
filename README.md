@@ -39,3 +39,5 @@ To add to your app:
 ```
 phonegap plugin add --save https://github.com/CreativeSDK/phonegap-plugin-csdk-user-auth
 ```
+
+x
