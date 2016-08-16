@@ -24,36 +24,60 @@
 
 var exec = cordova.require('cordova/exec');
 
-var UserAuth = {
-    /*
-    Logs in a user.
-
-    The successCallback will be called if the login was successful, and it will return
-    as its only argument, a JSON object with these five keys:
-        adobeID // The Adobe ID of the user
-        displayName // The display name of the user
-        firstName // The email address of the user
-        lastName // The first name of the user
-        email // The email address of the user
-
-    The failureCallback will be called if the login was unsuccessful, and it will return
-    as its only argument, an error message.
-    */
+/**
+    @description A global object that lets you log users in and out with their Adobe ID.
+    @global
+*/
+var CSDKUserAuth = {
+    /**
+     * @description Launches the User Auth UI component so a user can log in with their Adobe ID.
+     * @function login
+     * @memberof UserAuth
+     * @param {!loginSuccessCallback} loginSuccessCallback - See type definition.
+     * @param {!failureCallback} failureCallback - See type definition.
+     */
     login: function(successCallback, failureCallback) {
         exec(successCallback, failureCallback, 'UserAuth', 'login', []);
     },
-
-    /*
-    Logs out a user.
-
-    The successCallback will be called if the logout was successful, with no arguments.
-
-    The failureCallback will be called if the logout was unsuccessful, and it will return
-    as its only argument, an error message.
-    */
+    /**
+     * @description Logs the user out of their Adobe ID.
+     * @function logout
+     * @memberof UserAuth
+     * @param {!logoutSuccessCallback} logoutSuccessCallback - See type definition.
+     * @param {!failureCallback} failureCallback - See type definition.
+     */
     logout: function(successCallback, failureCallback) {
         exec(successCallback, failureCallback, 'UserAuth', 'logout', []);
     }
 };
 
-module.exports = UserAuth;
+/**
+ * @description Called if the user login was successful.
+ *
+ * @callback loginSuccessCallback
+ * @param {UserObject} userObject - See type definition.
+ */
+
+/**
+ * @description Called if the user logout was successful. No arguments are returned.
+ *
+ * @callback logoutSuccessCallback
+ */
+
+/**
+ * @description Called if the user login or logout fails.
+ *
+ * @callback failureCallback
+ * @param {string} error - Error message.
+ */
+
+/**
+ * @typedef {Object} UserObject - A JSON object containing user data.
+ * @property {string} adobeID - The Adobe ID of the user.
+ * @property {string} displayName - The display name of the user.
+ * @property {string} firstName - The email address of the user.
+ * @property {string} lastName - The first name of the user.
+ * @property {string} email - The email address of the user.
+ */
+
+module.exports = CSDKUserAuth;
