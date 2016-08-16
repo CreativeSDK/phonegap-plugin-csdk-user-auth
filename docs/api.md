@@ -1,7 +1,7 @@
 ## Members
 
 <dl>
-<dt><a href="#UserAuth">UserAuth</a></dt>
+<dt><a href="#CSDKUserAuth">CSDKUserAuth</a></dt>
 <dd><p>A global object that lets you log users in and out with their Adobe ID.</p>
 </dd>
 </dl>
@@ -23,41 +23,12 @@
 </dd>
 </dl>
 
-<a name="UserAuth"></a>
+<a name="CSDKUserAuth"></a>
 
-## UserAuth
+## CSDKUserAuth
 A global object that lets you log users in and out with their Adobe ID.
 
 **Kind**: global variable  
-
-* [UserAuth](#UserAuth)
-    * [.login(loginSuccessCallback, failureCallback)](#UserAuth.login)
-    * [.logout(logoutSuccessCallback, failureCallback)](#UserAuth.logout)
-
-<a name="UserAuth.login"></a>
-
-### UserAuth.login(loginSuccessCallback, failureCallback)
-Launches the User Auth UI component so a user can log in with their Adobe ID.
-
-**Kind**: static method of <code>[UserAuth](#UserAuth)</code>  
-
-| Param | Type | Description |
-| --- | --- | --- |
-| loginSuccessCallback | <code>[loginSuccessCallback](#loginSuccessCallback)</code> | See type definition. |
-| failureCallback | <code>[failureCallback](#failureCallback)</code> | See type definition. |
-
-<a name="UserAuth.logout"></a>
-
-### UserAuth.logout(logoutSuccessCallback, failureCallback)
-Logs the user out of their Adobe ID.
-
-**Kind**: static method of <code>[UserAuth](#UserAuth)</code>  
-
-| Param | Type | Description |
-| --- | --- | --- |
-| logoutSuccessCallback | <code>[logoutSuccessCallback](#logoutSuccessCallback)</code> | See type definition. |
-| failureCallback | <code>[failureCallback](#failureCallback)</code> | See type definition. |
-
 <a name="loginSuccessCallback"></a>
 
 ## loginSuccessCallback : <code>function</code>

@@ -28,7 +28,7 @@ var exec = cordova.require('cordova/exec');
     @description A global object that lets you log users in and out with their Adobe ID.
     @global
 */
-var UserAuth = {
+var CSDKUserAuth = {
     /**
      * @description Launches the User Auth UI component so a user can log in with their Adobe ID.
      * @function login
@@ -80,4 +80,4 @@ var UserAuth = {
  * @property {string} email - The email address of the user.
  */
 
-module.exports = UserAuth;
+module.exports = CSDKUserAuth;
