@@ -29,6 +29,35 @@
 A global object that lets you log users in and out with their Adobe ID.
 
 **Kind**: global variable  
+
+* [CSDKUserAuth](#CSDKUserAuth)
+    * [.login(loginSuccessCallback, failureCallback)](#CSDKUserAuth.login)
+    * [.logout(logoutSuccessCallback, failureCallback)](#CSDKUserAuth.logout)
+
+<a name="CSDKUserAuth.login"></a>
+
+### CSDKUserAuth.login(loginSuccessCallback, failureCallback)
+Launches the User Auth UI component so a user can log in with their Adobe ID.
+
+**Kind**: static method of <code>[CSDKUserAuth](#CSDKUserAuth)</code>  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| loginSuccessCallback | <code>[loginSuccessCallback](#loginSuccessCallback)</code> | See type definition. |
+| failureCallback | <code>[failureCallback](#failureCallback)</code> | See type definition. |
+
+<a name="CSDKUserAuth.logout"></a>
+
+### CSDKUserAuth.logout(logoutSuccessCallback, failureCallback)
+Logs the user out of their Adobe ID.
+
+**Kind**: static method of <code>[CSDKUserAuth](#CSDKUserAuth)</code>  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| logoutSuccessCallback | <code>[logoutSuccessCallback](#logoutSuccessCallback)</code> | See type definition. |
+| failureCallback | <code>[failureCallback](#failureCallback)</code> | See type definition. |
+
 <a name="loginSuccessCallback"></a>
 
 ## loginSuccessCallback : <code>function</code>
