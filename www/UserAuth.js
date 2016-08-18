@@ -32,22 +32,22 @@ var CSDKUserAuth = {
     /**
      * @description Launches the User Auth UI component so a user can log in with their Adobe ID.
      * @function login
-     * @memberof UserAuth
+     * @memberof CSDKUserAuth
      * @param {!loginSuccessCallback} loginSuccessCallback - See type definition.
      * @param {!failureCallback} failureCallback - See type definition.
      */
     login: function(successCallback, failureCallback) {
-        exec(successCallback, failureCallback, 'UserAuth', 'login', []);
+        exec(successCallback, failureCallback, 'CSDKUserAuth', 'login', []);
     },
     /**
      * @description Logs the user out of their Adobe ID.
      * @function logout
-     * @memberof UserAuth
+     * @memberof CSDKUserAuth
      * @param {!logoutSuccessCallback} logoutSuccessCallback - See type definition.
      * @param {!failureCallback} failureCallback - See type definition.
      */
     logout: function(successCallback, failureCallback) {
-        exec(successCallback, failureCallback, 'UserAuth', 'logout', []);
+        exec(successCallback, failureCallback, 'CSDKUserAuth', 'logout', []);
     }
 };
 
