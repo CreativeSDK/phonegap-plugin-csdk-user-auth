@@ -5,7 +5,7 @@
  */
 
 var cordova = require('./helper/cordova'),
-    UserAuth = require('../www/UserAuth'),
+    CSDKUserAuth = require('../www/UserAuth'),
     execSpy,
     execWin,
     options;
@@ -22,31 +22,31 @@ describe('phonegap-plugin-csdk-user-auth', function () {
 
     describe('User Auth', function () {
         it('should exist', function () {
-            expect(UserAuth).toBeDefined();
-            expect(typeof UserAuth === 'object').toBe(true);
+            expect(CSDKUserAuth).toBeDefined();
+            expect(typeof CSDKUserAuth === 'object').toBe(true);
         });
 
         it('should contain a login function', function () {
-            expect(UserAuth.login).toBeDefined();
-            expect(typeof UserAuth.login === 'function').toBe(true);
+            expect(CSDKUserAuth.login).toBeDefined();
+            expect(typeof CSDKUserAuth.login === 'function').toBe(true);
         });
 
         it('should contain a logout function', function () {
-            expect(UserAuth.logout).toBeDefined();
-            expect(typeof UserAuth.logout === 'function').toBe(true);
+            expect(CSDKUserAuth.logout).toBeDefined();
+            expect(typeof CSDKUserAuth.logout === 'function').toBe(true);
         });
     });
 
-    describe('UserAuth instance', function () {
+    describe('CSDKUserAuth instance', function () {
         describe('cordova.exec', function () {
             it('should call cordova.exec on next process tick', function (done) {
-                UserAuth.login(function(profile) {
+                CSDKUserAuth.login(function(profile) {
                 }, function() {});
                 setTimeout(function () {
                     expect(execSpy).toHaveBeenCalledWith(
                         jasmine.any(Function),
                         jasmine.any(Function),
-                        'UserAuth',
+                        'CSDKUserAuth',
                         'login',
                         jasmine.any(Object)
                     );
@@ -55,13 +55,13 @@ describe('phonegap-plugin-csdk-user-auth', function () {
             });
 
             it('should call cordova.exec on next process tick', function (done) {
-                UserAuth.logout(function(profile) {
+                CSDKUserAuth.logout(function(profile) {
                 }, function() {});
                 setTimeout(function () {
                     expect(execSpy).toHaveBeenCalledWith(
                         jasmine.any(Function),
                         jasmine.any(Function),
-                        'UserAuth',
+                        'CSDKUserAuth',
                         'logout',
                         jasmine.any(Object)
                     );
