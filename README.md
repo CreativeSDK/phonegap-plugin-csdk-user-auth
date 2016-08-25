@@ -125,7 +125,7 @@ var app = {
     },
 
     /* 2) Make a helper function to login to Creative Cloud */
-    launchEditor: function() {
+    login: function() {
 
     	/* 2.a) Prep work for calling `.login()` */
         function success(userObject) {
@@ -142,7 +142,7 @@ var app = {
 
 
     /* 3) Make a helper function to logout to Creative Cloud */
-    launchEditor: function() {
+    logout: function() {
 
     	/* 3.a) Prep work for calling `.logout()` */
         function success() {
