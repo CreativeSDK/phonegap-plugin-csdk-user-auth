@@ -24,9 +24,9 @@ phonegap-plugin-csdk-user-auth
 
 [![Stories in Ready](https://badge.waffle.io/CreativeSDK/phonegap-plugin-csdk-user-auth.png?label=ready&title=Ready)](http://waffle.io/CreativeSDK/phonegap-plugin-csdk-user-auth)
 
-The Creative SDK User Authentication component provides a solution for developers seeking to login to the Adobe Creative Cloud.
+The Creative SDK User Auth UI component provides a solution for developers seeking to allow their users to login to the Adobe Creative Cloud.
 
-This plugin makes it possible for you to use the Creative SDKUser Authentication in your PhoneGap apps. Read on to learn how!
+This plugin makes it possible for you to use the Creative SDK User Auth UI component in your PhoneGap apps. Read on to learn how!
 
 ### Contents
 
