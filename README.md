@@ -142,7 +142,7 @@ var app = {
     /* 3) Make a helper function to logout to Creative Cloud */
     launchEditor: function() {
 
-    	/* 2.a) Prep work for calling `.logout()` */
+    	/* 3.a) Prep work for calling `.logout()` */
         function success() {
             console.log("Logout Success!");
         }
@@ -151,7 +151,7 @@ var app = {
             console.log("Error!", error);
         }
 
-        /* 2.b) Launch User Auth */
+        /* 3.b) Launch User Auth */
         CSDKUserAuth.logout(success, error);
     }
 };
