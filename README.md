@@ -113,7 +113,7 @@ var app = {
     bindEvents: function() {
         // ...
 
-        /* 1) Add a click handlers for your buttons */
+        /* 1) Add click handlers for your buttons */
         document.getElementById('login').addEventListener('click', this.login, false);
         document.getElementById('logout').addEventListener('click', this.logout, false);
     },
@@ -124,7 +124,7 @@ var app = {
         // ...
     },
 
-    /* 2) Make a helper function to login to Creative Cloud */
+    /* 2) Make a helper function to log in to Creative Cloud */
     login: function() {
 
     	/* 2.a) Prep work for calling `.login()` */
@@ -136,12 +136,12 @@ var app = {
             console.log("Error!", error);
         }
 
-        /* 2.b) Launch User Auth */
+        /* 2.b) Launch User Auth UI */
         CSDKUserAuth.login(success, error);
     },
 
 
-    /* 3) Make a helper function to logout to Creative Cloud */
+    /* 3) Make a helper function to log out from Creative Cloud */
     logout: function() {
 
     	/* 3.a) Prep work for calling `.logout()` */
@@ -153,7 +153,7 @@ var app = {
             console.log("Error!", error);
         }
 
-        /* 3.b) Launch User Auth */
+        /* 3.b) Log out user */
         CSDKUserAuth.logout(success, error);
     }
 };
