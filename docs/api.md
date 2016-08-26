@@ -98,7 +98,7 @@ A JSON object containing user data.
 | --- | --- | --- |
 | adobeID | <code>string</code> | The Adobe ID of the user. |
 | displayName | <code>string</code> | The display name of the user. |
-| firstName | <code>string</code> | The email address of the user. |
-| lastName | <code>string</code> | The first name of the user. |
+| firstName | <code>string</code> | The first name of the user. |
+| lastName | <code>string</code> | The last name of the user. |
 | email | <code>string</code> | The email address of the user. |
 

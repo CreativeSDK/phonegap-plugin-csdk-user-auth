@@ -75,8 +75,8 @@ var CSDKUserAuth = {
  * @typedef {Object} UserObject - A JSON object containing user data.
  * @property {string} adobeID - The Adobe ID of the user.
  * @property {string} displayName - The display name of the user.
- * @property {string} firstName - The email address of the user.
- * @property {string} lastName - The first name of the user.
+ * @property {string} firstName - The first name of the user.
+ * @property {string} lastName - The last name of the user.
  * @property {string} email - The email address of the user.
  */
 
