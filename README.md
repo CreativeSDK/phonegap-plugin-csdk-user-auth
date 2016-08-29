@@ -26,7 +26,7 @@ phonegap-plugin-csdk-user-auth
 
 The Creative SDK User Auth UI component provides a solution for developers seeking to allow their users to login to the Adobe Creative Cloud.
 
-<img src="https://s3.amazonaws.com/csdk-assets-aviary-prod-us-east-1/docs/android/user-auth-login.png" style="border: 1px solid gray">
+<img src="https://s3.amazonaws.com/csdk-assets-aviary-prod-us-east-1/docs/android/user-auth-login.png" style="border: 1px solid gray" width="400px">
 
 This plugin makes it possible for you to use the Creative SDK User Auth UI component in your PhoneGap apps. Read on to learn how!
 
