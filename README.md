@@ -52,7 +52,7 @@ This plugin makes it possible for you to use the Creative SDK User Auth UI compo
 Use the command below to add the plugin to your app.
 
 ```
-phonegap plugin add --save https://github.com/CreativeSDK/phonegap-plugin-csdk-user-auth
+phonegap plugin add --save phonegap-plugin-csdk-user-auth
 ```
 
 ## Downloading the Creative SDK
