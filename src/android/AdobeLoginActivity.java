@@ -93,10 +93,14 @@ public class AdobeLoginActivity extends Activity {
     }
 
     private void showAdobeLoginUI() {
+        AdobeAuthRedirectCredentialsApp mApplication = (AdobeAuthRedirectCredentialsApp)getApplicationContext();
+        final String[] authScope = {"email", "profile", "address"};
         mUXAuthManager.login(new AdobeAuthSessionLauncher.Builder()
-                        .withActivity(this)
-                        .withRequestCode(200) // Can be any int
-                        .build()
+                .withActivity(this)
+                .withRedirectURI(mApplication.getRedirectUri())
+                .withAdditonalScopes(authScope)
+                .withRequestCode(200) // Can be any int
+                .build()
         );
     }
 
